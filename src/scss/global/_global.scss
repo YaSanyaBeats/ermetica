@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	overflow-x: hidden;
+	font-family: Gotham;
+	font-weight: 300;
+	min-height: 100vh;
+}
+
+h1 {
+	font-family: Sinistre, sans-serif;
+	font-weight: 400;
+}
+
+.container{
+	width: 1160px;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: white;
+	padding: 5px 5px;
+	&:focus {
+		outline: none;
+	}
+}

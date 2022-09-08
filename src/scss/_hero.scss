@@ -1,0 +1,33 @@
+.hero {
+    background: url('../img/hero-bg.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    &__container {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title {
+        color: white;
+        font-size: 36px;
+        width: 420px;
+    }
+    &__link {
+        color: white;
+        font-size: 16px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 85px;
+            height: 10px;
+            background: url(../img/icons/arrow.svg) no-repeat 50% 50%;
+            background-size: contain;
+        }
+    }
+}
+.container {
+}
